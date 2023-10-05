@@ -8,7 +8,12 @@ items = {
 }
 
 
-@app.post("/your-endpoint")
+"""@app.get("/")
+def read_root():
+    return {"message": "Hello, World!"}"""
+
+
+@app.post("/http://0.0.0.0:8000/")
 async def handle_request(request_data: dict):
     # Handle the incoming HTTP request here
     # request_data contains the parsed JSON body

@@ -20,7 +20,7 @@ jobs:
           PR_TITLE=$GITHUB_EVENT_PULL_REQUEST_TITLE
           PR_BODY=$GITHUB_EVENT_PULL_REQUEST_BODY
           PR_URL=$GITHUB_EVENT_PULL_REQUEST_HTML_URL
-          HTTP_URL="YOUR_HTTP_ENDPOINT_URL_HERE"
+          HTTP_URL="http://0.0.0.0:8000/"
           
           # Construct JSON payload
           JSON_PAYLOAD="{\"pr_number\": \"$PR_NUMBER\", \"pr_title\": \"$PR_TITLE\", \"pr_body\": \"$PR_BODY\", \"pr_url\": \"$PR_URL\"}"
